@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuizApp</string>
+    <string name="app_name">Quiz App</string>
     <string name="welcome_back">Welcome Back!</string>
     <string name="login_to_continue">Login to continue</string>
     <string name="dialog_quit_game">Would you like to leave?</string>
@@ -22,5 +22,30 @@
     <string name="rules2_description">Each correct answer gives you 5 points.</string>
     <string name="rules3_description">Each incorrect answer deducts 2 points.</string>
     <string name="rules4_description">Your results will be saved and collected in your history.</string>
+
+    <!-- New strings for custom quiz feature -->
+    <string name="create_quiz">Create Quiz</string>
+    <string name="my_questions">My Questions</string>
+    <string name="custom_quiz">Custom Quiz</string>
+    <string name="create_new_question">Create New Question</string>
+    <string name="question">Question</string>
+    <string name="option_a">Option A</string>
+    <string name="option_b">Option B</string>
+    <string name="option_c">Option C</string>
+    <string name="option_d">Option D</string>
+    <string name="select_correct_answer">Select correct answer:</string>
+    <string name="save_question">Save Question</string>
+    <string name="view_my_questions">View My Questions</string>
+    <string name="total_questions">Total questions: %d</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="no_questions_yet">No questions yet.\nCreate your first question!</string>
+    <string name="please_fill_all_fields">Please fill all fields</string>
+    <string name="please_select_correct_answer">Please select correct answer</string>
+    <string name="question_saved_successfully">Question saved successfully!</string>
+    <string name="need_minimum_questions">Need at least 5 questions to start quiz</string>
+    <string name="question_deleted">Question deleted</string>
+    <string name="please_select_option">Please select an option!</string>
+    <string name="complete">Complete</string>
+    <string name="answer_prefix">Answer: %s</string>
 
 </resources>
