@@ -32,6 +32,20 @@
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <!-- Settings Button ở góc phải trên -->
+    <ImageView
+        android:id="@+id/ivSettings"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="4dp"
+        android:src="@drawable/ic_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -69,7 +83,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -112,7 +125,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="@dimen/home_image_view_size"
@@ -151,7 +163,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="@dimen/home_image_view_size"
@@ -184,7 +195,7 @@
             android:layout_height="@dimen/home_card_height"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toStartOf="@+id/cvSettings"
+            app:layout_constraintEnd_toStartOf="@+id/cvEditPassword"
             app:layout_constraintStart_toStartOf="@+id/cvRule"
             app:layout_constraintTop_toBottomOf="@+id/cvRule">
 
@@ -214,14 +225,12 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cvSettings"
+            android:id="@+id/cvEditPassword"
             style="@style/cardViewStyle"
             android:layout_width="0dp"
             android:layout_height="@dimen/home_card_height"
@@ -233,47 +242,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/ivSettingsIcon"
-                    android:layout_width="@dimen/home_image_view_size"
-                    android:layout_height="@dimen/home_image_view_size"
-                    android:src="@drawable/ic_settings"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.35"
-                    app:tint="@color/blue_med" />
-
-                <TextView
-                    style="@style/categoryHeadingTextStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Settings"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/ivSettingsIcon" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cvEditPassword"
-            style="@style/cardViewStyle"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/home_card_height"
-            android:layout_marginTop="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/cvStartQuiz"
-            app:layout_constraintStart_toStartOf="@+id/cvCreateQuiz"
-            app:layout_constraintTop_toBottomOf="@+id/cvCreateQuiz">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
 
                 <ImageView
                     android:id="@+id/imageView5"
@@ -300,7 +268,6 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

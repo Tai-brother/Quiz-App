@@ -13,6 +13,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.quizapp.example.R;
@@ -20,7 +21,8 @@ import com.quizapp.example.local_data.QuizPref;
 
 public class HomeActivity extends AppCompatActivity {
     TextView userNameHome;
-    CardView cvStartQuiz, cvRule, cvHistory, cvCreateQuiz, cvAbout, cvSettings;
+    CardView cvStartQuiz, cvRule, cvHistory, cvCreateQuiz, cvAbout;
+    ImageView ivSettings;
     QuizPref quizPref;
 
     @SuppressLint("SetTextI18n")
@@ -30,24 +32,29 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         initView();
         userNameHome.setText("Hello " + quizPref.getName());
+        
         cvHistory.setOnClickListener(v -> {
             startActivity(new Intent(HomeActivity.this, HistoryActivity.class));
         });
+        
         cvAbout.setOnClickListener(v -> {
             startActivity(new Intent(HomeActivity.this, AboutActivity.class));
         });
+        
         cvStartQuiz.setOnClickListener(view -> {
             startActivity(new Intent(HomeActivity.this, QuizOptionActivity.class));
-
         });
+        
         cvCreateQuiz.setOnClickListener(v -> {
             startActivity(new Intent(HomeActivity.this, CreateQuizActivity.class));
         });
+        
         cvRule.setOnClickListener(view -> {
             startActivity(new Intent(HomeActivity.this, RulesActivity.class));
-
         });
-        cvSettings.setOnClickListener(v -> {
+        
+        // Settings button click
+        ivSettings.setOnClickListener(v -> {
             startActivity(new Intent(HomeActivity.this, SettingsActivity.class));
         });
     }
@@ -58,7 +65,7 @@ public class HomeActivity extends AppCompatActivity {
         cvAbout = findViewById(R.id.cvEditPassword);
         cvHistory = findViewById(R.id.cvHistory);
         cvCreateQuiz = findViewById(R.id.cvCreateQuiz);
-        cvSettings = findViewById(R.id.cvSettings);
+        ivSettings = findViewById(R.id.ivSettings);
         userNameHome = (TextView) findViewById(R.id.tvUsernameHome);
         quizPref = QuizPref.getInstance();
     }
