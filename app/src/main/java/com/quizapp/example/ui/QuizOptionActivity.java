@@ -19,6 +19,8 @@ public class QuizOptionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_option);
         CardView cvMath = findViewById(R.id.cvMath);
+        CardView cvCustomQuiz = findViewById(R.id.cvCustomQuiz);
+        
         findViewById(R.id.imageViewQuizOption).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,6 +37,10 @@ public class QuizOptionActivity extends AppCompatActivity {
         CardView cvLiterature = findViewById(R.id.cvLiterature);
         cvLiterature.setOnClickListener(view -> {
             literatureClick();
+        });
+        
+        cvCustomQuiz.setOnClickListener(view -> {
+            customQuizClick();
         });
     }
 
@@ -54,6 +60,11 @@ public class QuizOptionActivity extends AppCompatActivity {
     public void literatureClick() {
         Intent intent = new Intent(QuizOptionActivity.this, GeographyOrLiteratureQuizActivity.class);
         intent.putExtra(Constants.SUBJECT, getString(R.string.literature));
+        startActivity(intent);
+    }
+    
+    public void customQuizClick() {
+        Intent intent = new Intent(QuizOptionActivity.this, MyQuestionsActivity.class);
         startActivity(intent);
     }
 }

@@ -20,7 +20,7 @@ import com.quizapp.example.local_data.QuizPref;
 
 public class HomeActivity extends AppCompatActivity {
     TextView userNameHome;
-    CardView cvStartQuiz, cvRule, cvHistory, cvLogout, cvAbout;
+    CardView cvStartQuiz, cvRule, cvHistory, cvCreateQuiz, cvAbout;
     QuizPref quizPref;
 
     @SuppressLint("SetTextI18n")
@@ -40,20 +40,8 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(new Intent(HomeActivity.this, QuizOptionActivity.class));
 
         });
-        cvLogout.setOnClickListener(v -> {
-            Dialog dialog = new Dialog(this);
-            View view =LayoutInflater.from(this).inflate(R.layout.activty_exit,findViewById(R.id.container),false);
-            dialog.setContentView(view);
-            view.findViewById(R.id.button_exit_no).setOnClickListener(view1->{
-                dialog.cancel();
-                dialog.dismiss();
-            });
-            view.findViewById(R.id.button_exit_yes).setOnClickListener(view2->{
-                finish();
-            });
-            dialog.show();
-
-            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        cvCreateQuiz.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, CreateQuizActivity.class));
         });
         cvRule.setOnClickListener(view -> {
             startActivity(new Intent(HomeActivity.this, RulesActivity.class));
@@ -66,7 +54,7 @@ public class HomeActivity extends AppCompatActivity {
         cvRule = findViewById(R.id.cvRule);
         cvAbout = findViewById(R.id.cvEditPassword);
         cvHistory = findViewById(R.id.cvHistory);
-        cvLogout = findViewById(R.id.cvLogout);
+        cvCreateQuiz = findViewById(R.id.cvCreateQuiz);
         userNameHome = (TextView) findViewById(R.id.tvUsernameHome);
         quizPref = QuizPref.getInstance();
     }

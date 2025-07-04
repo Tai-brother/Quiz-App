@@ -30,20 +30,34 @@ public class QuizPref {
         editor.putString("name", name);
         editor.apply();
     }
-    public void  historyQuiz(String quizList){
+    
+    public void historyQuiz(String quizList){
         editor.putString("historys",quizList);
         editor.apply();
     }
+    
     public void shoResultQuiz(String quizList){
         editor.putString("showResultQuiz",quizList);
         editor.apply();
     }
+    
+    public void saveCustomQuestions(String customQuestions) {
+        editor.putString("custom_questions", customQuestions);
+        editor.apply();
+    }
+    
+    public String getCustomQuestions() {
+        return sharedPreferences.getString("custom_questions", "");
+    }
+    
     public String getShowResultQuiz(){
      return    sharedPreferences.getString("showResultQuiz","");
     }
+    
     public String getHistoryQuiz(){
         return  sharedPreferences.getString("historys","");
     }
+    
     public String getName() {
         return sharedPreferences.getString("name", "");
     }
