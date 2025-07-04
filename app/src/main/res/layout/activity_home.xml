@@ -196,13 +196,12 @@
                     android:id="@+id/imageView6"
                     android:layout_width="@dimen/home_image_view_size"
                     android:layout_height="@dimen/home_image_view_size"
-                    android:src="@drawable/quiz"
+                    android:src="@drawable/ic_create_quiz"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.35"
-                    app:tint="@color/peach" />
+                    app:layout_constraintVertical_bias="0.35" />
 
                 <TextView
                     style="@style/categoryHeadingTextStyle"
