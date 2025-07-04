@@ -20,7 +20,7 @@ import com.quizapp.example.local_data.QuizPref;
 
 public class HomeActivity extends AppCompatActivity {
     TextView userNameHome;
-    CardView cvStartQuiz, cvRule, cvHistory, cvCreateQuiz, cvAbout;
+    CardView cvStartQuiz, cvRule, cvHistory, cvCreateQuiz, cvAbout, cvSettings;
     QuizPref quizPref;
 
     @SuppressLint("SetTextI18n")
@@ -47,6 +47,9 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(new Intent(HomeActivity.this, RulesActivity.class));
 
         });
+        cvSettings.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this, SettingsActivity.class));
+        });
     }
 
     public void initView() {
@@ -55,6 +58,7 @@ public class HomeActivity extends AppCompatActivity {
         cvAbout = findViewById(R.id.cvEditPassword);
         cvHistory = findViewById(R.id.cvHistory);
         cvCreateQuiz = findViewById(R.id.cvCreateQuiz);
+        cvSettings = findViewById(R.id.cvSettings);
         userNameHome = (TextView) findViewById(R.id.tvUsernameHome);
         quizPref = QuizPref.getInstance();
     }
