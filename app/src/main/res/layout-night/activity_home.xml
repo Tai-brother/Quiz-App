@@ -198,6 +198,7 @@
                     android:layout_width="@dimen/home_image_view_size"
                     android:layout_height="@dimen/home_image_view_size"
                     android:src="@drawable/ic_create_quiz"
+                    android:scaleType="centerCrop"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
