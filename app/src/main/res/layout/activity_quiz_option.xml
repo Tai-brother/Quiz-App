@@ -171,11 +171,11 @@
                 android:layout_width="@dimen/start_quiz_image_view_size"
                 android:layout_height="@dimen/start_quiz_image_view_size"
                 android:layout_marginStart="24dp"
+                android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/quiz"
-                app:tint="@color/peach" />
+                app:srcCompat="@drawable/ic_create_quiz" />
 
             <TextView
                 android:id="@+id/textView8"
