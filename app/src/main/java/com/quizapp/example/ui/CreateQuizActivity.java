@@ -74,13 +74,13 @@ public class CreateQuizActivity extends AppCompatActivity {
         
         if (question.isEmpty() || option1.isEmpty() || option2.isEmpty() || 
             option3.isEmpty() || option4.isEmpty()) {
-            Toast.makeText(this, "Vui lòng điền đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show();
             return;
         }
         
         int selectedId = rgCorrectAnswer.getCheckedRadioButtonId();
         if (selectedId == -1) {
-            Toast.makeText(this, "Vui lòng chọn đáp án đúng", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please select correct answer", Toast.LENGTH_SHORT).show();
             return;
         }
         
@@ -92,7 +92,7 @@ public class CreateQuizActivity extends AppCompatActivity {
         
         saveCustomQuestion(customQuestion);
         
-        Toast.makeText(this, "Đã lưu câu hỏi thành công!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Question saved successfully!", Toast.LENGTH_SHORT).show();
         clearForm();
     }
     

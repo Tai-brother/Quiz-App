@@ -16,4 +16,9 @@
     <color name="blue_med">#03A9F4</color>
     <color name="light_blue_med">#89C4DA</color>
 
+    <!-- Gradient colors -->
+    <color name="gradient_start">#667eea</color>
+    <color name="gradient_center">#764ba2</color>
+    <color name="gradient_end">#f093fb</color>
+
 </resources>

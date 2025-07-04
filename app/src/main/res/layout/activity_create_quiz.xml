@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue_med"
+    android:background="@drawable/gradient_background"
     tools:context=".ui.CreateQuizActivity">
 
     <ImageView
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:text="Tạo Quiz"
+        android:text="Create Quiz"
         android:textColor="@color/white"
         style="@style/titleTextStyle"
         app:layout_constraintBottom_toBottomOf="@+id/ivBackCreateQuiz"
@@ -36,7 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/home_bg"
+        android:background="@drawable/home_card_gradient"
         android:elevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +62,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tạo câu hỏi mới"
+                    android:text="Create New Question"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"
@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:hint="Câu hỏi">
+                    android:hint="Question">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etQuestion"
@@ -86,7 +86,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:hint="Đáp án A">
+                    android:hint="Option A">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etOption1"
@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:hint="Đáp án B">
+                    android:hint="Option B">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etOption2"
@@ -112,7 +112,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:hint="Đáp án C">
+                    android:hint="Option C">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etOption3"
@@ -125,7 +125,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="24dp"
-                    android:hint="Đáp án D">
+                    android:hint="Option D">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etOption4"
@@ -137,7 +137,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Chọn đáp án đúng:"
+                    android:text="Select correct answer:"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold"
@@ -154,7 +154,7 @@
                         android:id="@+id/rbOption1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đáp án A"
+                        android:text="Option A"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp" />
 
@@ -162,7 +162,7 @@
                         android:id="@+id/rbOption2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đáp án B"
+                        android:text="Option B"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp" />
 
@@ -170,7 +170,7 @@
                         android:id="@+id/rbOption3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đáp án C"
+                        android:text="Option C"
                         android:textColor="@color/black"
                         android:layout_marginBottom="8dp" />
 
@@ -178,7 +178,7 @@
                         android:id="@+id/rbOption4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đáp án D"
+                        android:text="Option D"
                         android:textColor="@color/black" />
 
                 </RadioGroup>
@@ -189,7 +189,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:text="Lưu câu hỏi"
+                    android:text="Save Question"
                     android:textAllCaps="false" />
 
                 <com.google.android.material.button.MaterialButton
@@ -198,7 +198,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/gray"
-                    android:text="Xem câu hỏi của tôi"
+                    android:text="View My Questions"
                     android:textAllCaps="false" />
 
             </LinearLayout>

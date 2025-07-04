@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Background Circle -->
+    <path
+        android:pathData="M100,20C154.18,20 180,45.82 180,100C180,154.18 154.18,180 100,180C45.82,180 20,154.18 20,100C20,45.82 45.82,20 100,20Z"
+        android:fillColor="#4CAF50"/>
+    
+    <!-- Question Mark -->
+    <path
+        android:pathData="M100,60C110,60 118,68 118,78C118,85 115,90 110,93L108,95C106,97 105,99 105,102L105,108L95,108L95,102C95,96 97,92 100,89L102,87C104,85 105,82 105,78C105,73 102,70 100,70C98,70 95,73 95,78L85,78C85,63 90,60 100,60Z"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Dot -->
+    <path
+        android:pathData="M100,120C105,120 110,125 110,130C110,135 105,140 100,140C95,140 90,135 90,130C90,125 95,120 100,120Z"
+        android:fillColor="#FFFFFF"/>
+    
+    <!-- Book Pages -->
+    <path
+        android:pathData="M70,140L130,140L130,160L70,160Z"
+        android:fillColor="#FF9800"/>
+    
+    <path
+        android:pathData="M75,145L125,145L125,155L75,155Z"
+        android:fillColor="#FFFFFF"/>
+    
+    <path
+        android:pathData="M80,148L120,148L120,150L80,150Z"
+        android:fillColor="#4CAF50"/>
+    
+    <path
+        android:pathData="M80,152L120,152L120,154L80,154Z"
+        android:fillColor="#4CAF50"/>
+</vector>
