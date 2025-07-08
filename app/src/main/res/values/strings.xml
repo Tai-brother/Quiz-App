@@ -18,9 +18,9 @@
     <string name="next">Next</string>
     <string name="literature_quiz">Literature</string>
     <string name="geography_quiz">Geography</string>
-    <string name="rules1_description">The quiz consists of 10 random questions.</string>
-    <string name="rules2_description">Each correct answer gives you 5 points.</string>
-    <string name="rules3_description">Each incorrect answer deducts 2 points.</string>
+    <string name="rules1_description">The quiz consists of 10 random questions. Answer each question to the best of your ability.</string>
+    <string name="rules2_description">There is no point addition or deduction. Just try to answer correctly!</string>
+    <string name="rules3_description">You can skip questions if you are unsure. Take your time to think.</string>
     <string name="rules4_description">Your results will be saved and collected in your history.</string>
 
     <!-- New strings for custom quiz feature -->

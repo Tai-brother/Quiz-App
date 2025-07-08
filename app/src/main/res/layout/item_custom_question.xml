@@ -40,7 +40,18 @@
             app:layout_constraintEnd_toStartOf="@+id/ivDeleteQuestion"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvQuestionItem"
-            tools:text="Đáp án: Đáp án đúng" />
+            tools:text="Đáp án: Đáp án đúng"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnShowQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem đáp án"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCorrectAnswerItem" />
 
         <ImageView
             android:id="@+id/ivDeleteQuestion"

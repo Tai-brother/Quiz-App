@@ -3,6 +3,7 @@ package com.quizapp.example.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,6 +41,13 @@ public class CustomQuestionsAdapter extends RecyclerView.Adapter<CustomQuestions
         
         holder.tvQuestion.setText(question.getQuestion());
         holder.tvCorrectAnswer.setText("Đáp án: " + question.getCorrectAnswer());
+        holder.tvCorrectAnswer.setVisibility(View.GONE);
+        holder.btnShowQuestion.setVisibility(View.VISIBLE);
+        
+        holder.btnShowQuestion.setOnClickListener(v -> {
+            holder.tvCorrectAnswer.setVisibility(View.VISIBLE);
+            holder.btnShowQuestion.setVisibility(View.GONE);
+        });
         
         holder.ivDelete.setOnClickListener(v -> {
             activity.deleteQuestion(position);
@@ -55,6 +63,7 @@ public class CustomQuestionsAdapter extends RecyclerView.Adapter<CustomQuestions
         TextView tvQuestion, tvCorrectAnswer;
         ImageView ivDelete;
         CardView cardView;
+        Button btnShowQuestion;
         
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,6 +71,7 @@ public class CustomQuestionsAdapter extends RecyclerView.Adapter<CustomQuestions
             tvCorrectAnswer = itemView.findViewById(R.id.tvCorrectAnswerItem);
             ivDelete = itemView.findViewById(R.id.ivDeleteQuestion);
             cardView = itemView.findViewById(R.id.cvQuestionItem);
+            btnShowQuestion = itemView.findViewById(R.id.btnShowQuestion);
         }
     }
 }
