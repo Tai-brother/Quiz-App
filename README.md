@@ -1,4 +1,4 @@
-# <span style="color:#1976d2;">🎓Quiz App - Ứng dụng trắc nghiệm </span>
+   # <span style="color:#1976d2;">🎓Quiz App - Ứng dụng trắc nghiệm </span>
 
 ## <span style="color:#1976d2;">📚 Mục lục</span>
 1. [<span style="color:#1976d2;">Tên dự án & Chủ đề</span>](#1-tên-dự-án--chủ-đề)
@@ -140,3 +140,4 @@ Ví dụ: `feature/add-history-screen`, `bugfix/fix-score-bug`
 ---
 
 > <span style="color:#1976d2; font-weight:bold;">Quiz App - Học vui, chơi chất, thử thách trí tuệ!</span>
+# Quiz-App
